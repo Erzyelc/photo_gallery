@@ -1,0 +1,119 @@
+body {
+  background: #8ecae6;
+  color: #023047;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 7vw;
+  line-height: 1.4;
+  margin: 0 15px;
+}
+
+h2 {
+  bottom: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0 20px 20px;
+  position: fixed;
+}
+
+p {
+  font-size: 18px;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  width: 55vw;
+}
+
+figcaption {
+  bottom: 0;
+  color: #fff;
+  font-size: 36px;
+  padding: 20px 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+img,
+aside {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+  opacity: 0;
+}
+
+aside {
+  align-items: center;
+  background: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.loading {
+  display: grid;
+  grid-row-gap: 12px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background: #e8e8e8;
+}
+
+progress[value]::-webkit-progress-value {
+  background: #294910;
+}
+
+progress {
+  border: 1px solid #294910;
+  height: 20px;
+  width: 400px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 20px;
+    position: relative;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  figure {
+    flex-grow: 1;
+    width: 100vw;
+  }
+
+  figcaption {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+}
